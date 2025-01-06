@@ -1,9 +1,14 @@
 
+import {useState} from "react";
+
 const Title = () => {
-    return (
        
+  
+    return (
+ 
       <a href="/">
           
+         
           <img 
         className='logo'
         alt="logo"
@@ -20,10 +25,28 @@ const Title = () => {
   
   
   const Header =()=>{
+
+
+    const [title, settitle]= useState("Foode Villa");
+
+
+     
     return(
            
       <div className="header"> 
         <Title />
+        
+        <h1> {title}</h1>
+        <button onClick={()=>{
+           if(title=="Food Villa"){
+          settitle("Food Ordering Website")
+        }else{
+          settitle("Food Villa");
+        }
+        }
+ 
+        }> Change Title</button>
+
         <div className="nav-items">
           <ul>
             <ul>Home</ul>
