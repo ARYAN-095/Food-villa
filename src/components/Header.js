@@ -1,4 +1,4 @@
-
+import {Link} from "react-router-dom";
 import {useState} from "react";
 
 const Title = () => {
@@ -27,7 +27,7 @@ const Title = () => {
   const Header =()=>{
 
 
-    const [title, settitle]= useState("Foode Villa");
+    const [title, settitle]= useState("Food Villa");
 
 
      
@@ -49,9 +49,18 @@ const Title = () => {
 
         <div className="nav-items">
           <ul>
-            <ul>Home</ul>
-            <ul>About</ul>
-            <ul>Contact</ul>
+          <Link to ="/">
+          <ul>Home</ul>
+          </Link>
+            
+            <Link to="/about">
+             <ul>About</ul>
+            </Link>
+           
+           <Link to="contact"> 
+           <ul>Contact</ul>
+           </Link>
+            
             <ul>Cart</ul>
           </ul>
         </div>

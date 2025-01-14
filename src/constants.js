@@ -1213,4 +1213,7 @@ export const img_cdn_url=
     },
   ];
 
-  
+  export const swiggy_api_url =
+  "https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=21.1702401&lng=72.83106070000001&page_type=DESKTOP_WEB_LISTING";
+
+  export const shimmer_card_unit = 20;
